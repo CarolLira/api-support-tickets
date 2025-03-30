@@ -7,8 +7,6 @@ const database = new Database()
 
 export function routeHandler(request, response) {
   const route = routes.find((route) => {
-    console.log(route)
-
     return route.method === request.method && route.path.test(request.url)
   })
 
