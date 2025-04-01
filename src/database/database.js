@@ -51,6 +51,8 @@ export class Database {
         ...this.#database[table][rowIndex],
         ...data
       }
+
+      this.#persist()
     }
   }
 }
